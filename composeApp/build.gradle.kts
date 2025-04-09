@@ -35,6 +35,19 @@ kotlin {
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
+
+            val voyagerVersion = "1.1.0-beta02"
+
+            implementation("cafe.adriel.voyager:voyager-navigator:$voyagerVersion")
+
+            // Screen Model
+            implementation("cafe.adriel.voyager:voyager-screenmodel:$voyagerVersion")
+
+            // BottomSheetNavigator
+            implementation("cafe.adriel.voyager:voyager-bottom-sheet-navigator:$voyagerVersion")
+
+            // TabNavigator
+            implementation("cafe.adriel.voyager:voyager-tab-navigator:$voyagerVersion")
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)
