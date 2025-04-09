@@ -49,13 +49,13 @@ class SelectingDetailedInformation: Screen {
                 ) {
                     MarathonButton(
                         text = "Marathon Skills 2016",
-                        onClick = { /* Обработка клика */ },
+                        onClick = {  },
                         modifier = Modifier.padding(15.dp)
                     )
 
                     MarathonButton(
                         text = "Предыдущие результаты",
-                        onClick = { /* Обработка клика */ },
+                        onClick = {  },
                         modifier = Modifier.padding(15.dp)
                     )
 
