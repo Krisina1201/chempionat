@@ -48,6 +48,8 @@ kotlin {
 
             // TabNavigator
             implementation("cafe.adriel.voyager:voyager-tab-navigator:$voyagerVersion")
+
+
         }
         desktopMain.dependencies {
             implementation(compose.desktop.currentOs)

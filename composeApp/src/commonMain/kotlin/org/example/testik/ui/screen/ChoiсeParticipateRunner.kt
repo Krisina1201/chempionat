@@ -54,7 +54,7 @@ class ChoiceParticipateRunnerScreen : Screen {
 
                     MarathonButton(
                         text = "Я участвовал ранее",
-                        onClick = {  },
+                        onClick = { navigator.push(Authorization()) },
                         modifier = Modifier.padding(15.dp)
                     )
 

@@ -2,8 +2,11 @@ package org.example.testik.ui.screen
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.FlowColumn
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.runtime.Composable
@@ -15,8 +18,11 @@ import cafe.adriel.voyager.navigator.LocalNavigator
 import cafe.adriel.voyager.navigator.Navigator
 import cafe.adriel.voyager.navigator.currentOrThrow
 import org.example.testik.ui.screen.component.MarathonButton
+import org.jetbrains.skiko.SkiaLayerAnalytics
 
 class SelectingDetailedInformation: Screen {
+
+
     @Composable
     override fun Content() {
         SelectingDetailedInformationScreen()
@@ -45,24 +51,24 @@ class SelectingDetailedInformation: Screen {
                         .fillMaxSize()
                         .padding(50.dp),
                     horizontalAlignment = Alignment.Start,
-                    verticalArrangement = Arrangement.Bottom
+                    verticalArrangement = Arrangement.Center
                 ) {
                     MarathonButton(
                         text = "Marathon Skills 2016",
                         onClick = {  },
-                        modifier = Modifier.padding(15.dp)
+                        modifier = Modifier.padding(15.dp).width(300.dp).height(75.dp)
                     )
 
                     MarathonButton(
                         text = "Предыдущие результаты",
                         onClick = {  },
-                        modifier = Modifier.padding(15.dp)
+                        modifier = Modifier.padding(15.dp).width(300.dp).height(75.dp)
                     )
 
                     MarathonButton(
                         text = "BMI калькулятор",
                         onClick = {  },
-                        modifier = Modifier.padding(15.dp)
+                        modifier = Modifier.padding(15.dp).width(300.dp).height(75.dp)
                     )
                 }
 
@@ -72,23 +78,23 @@ class SelectingDetailedInformation: Screen {
                         .fillMaxSize()
                         .padding(50.dp),
                     horizontalAlignment = Alignment.End,
-                    verticalArrangement = Arrangement.Bottom,
+                    verticalArrangement = Arrangement.Center,
                 ) {
                     MarathonButton(
                         text = "Насколько долгий марафон",
-                        modifier = Modifier.padding(15.dp),
+                        modifier = Modifier.padding(15.dp).width(300.dp).height(75.dp),
                         onClick = {  }
                     )
 
                     MarathonButton(
                         text = "Список благотворительных\nорганизаций",
-                        modifier = Modifier.padding(15.dp),
+                        modifier = Modifier.padding(15.dp).width(300.dp).height(75.dp),
                         onClick = {  }
                     )
 
                     MarathonButton(
                         text = "BMR калькулятор",
-                        modifier = Modifier.padding(15.dp),
+                        modifier = Modifier.padding(15.dp).width(300.dp).height(75.dp),
                         onClick = {  }
                     )
                 }

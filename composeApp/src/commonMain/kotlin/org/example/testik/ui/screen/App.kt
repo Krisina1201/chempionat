@@ -55,17 +55,20 @@ class HomeScreen : Screen {
                 ) {
                     MarathonButton(
                         text = "Я хочу стать бегуном",
-                        onClick = { navigator.push(ChoiceParticipateRunnerScreen()) }
+                        onClick = { navigator.push(ChoiceParticipateRunnerScreen()) },
+                        modifier = Modifier.width(400.dp)
                     )
 
                     MarathonButton(
                         text = "Я хочу стать спонсором бегуна",
-                        onClick = {  }
+                        onClick = {  },
+                        modifier = Modifier.width(400.dp)
                     )
 
                     MarathonButton(
                         text = "Я хочу узнать больше о событии",
-                        onClick = { navigator.push(SelectingDetailedInformation()) }
+                        onClick = { navigator.push(SelectingDetailedInformation()) },
+                        modifier = Modifier.width(400.dp)
                     )
                 }
 

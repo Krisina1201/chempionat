@@ -2,6 +2,8 @@ package org.example.testik.ui.screen.component
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Button
 import androidx.compose.material.ButtonDefaults
@@ -23,6 +25,7 @@ fun MarathonButton(
         onClick = onClick,
         modifier = modifier
             .height(60.dp),
+            //.width(350.dp),
         colors = ButtonDefaults.buttonColors(
             backgroundColor = Color.White,
             contentColor = Color.Black
